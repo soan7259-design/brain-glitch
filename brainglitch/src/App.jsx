@@ -13,7 +13,10 @@ const firebaseConfig = {
   storageBucket: "brain-glitch.firebasestorage.app",
   messagingSenderId: "905708629011",
   appId: "1:905708629011:web:bf770b1fd0c32d3560a3e6"
-};
+}; const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
 // --- Tier Data ---
 const TIERS = [
   { min: 0, name: "단세포", emoji: "🫧" },
